@@ -8,6 +8,12 @@
         :value="block.value"
       ></component>
     </template>
+    <!-- <template v-if="blocks.length" v-for="block in blocks" :key="block.id">
+      <resume-title v-if="block.type === 'title'" :value="block.value"></resume-title>
+      <resume-subtitle v-else-if="block.type === 'subtitle'" :value="block.value"></resume-subtitle>
+      <resume-text v-else-if="block.type === 'text'" :value="block.value"></resume-text>
+      <resume-avatar v-else-if="block.type === 'avatar'" :value="block.value"></resume-avatar>
+    </template> -->
     <h3 v-else>Добавьте первый блок, чтобы увидеть результат</h3>
   </div>
 </template>
